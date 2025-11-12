@@ -19,6 +19,9 @@ function Banner_Principal() {
         </button>
       </div>
       
+      {/* Linha Separadora Preta */}
+      <div className="banner-separator-line"></div>
+
       {/* Barra de Destaque Inferior (Vermelha) */}
       <div className="banner-bottom-bar">
         <p className="bottom-bar-text">
