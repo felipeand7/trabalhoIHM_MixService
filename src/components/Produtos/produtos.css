@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#produtos{
+  margin: 0 auto;
+  max-width: 1400px;
+  margin-top: 20px
+}
+#lista-produtos{
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  padding:  0px 50px 0px 50px;
+}

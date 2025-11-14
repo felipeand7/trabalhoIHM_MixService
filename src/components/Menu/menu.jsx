@@ -1,7 +1,6 @@
 import {LuMoon, LuSun} from "react-icons/lu"
-
-import './menu.css'
 import logo from '../image/logo.png'
+import './menu.css'
 
 const menu = () => {
   return (
@@ -22,7 +21,7 @@ const menu = () => {
     </div>
     </div>
     
-  </nav>)
+  </nav>) 
 }
 
 export default menu
