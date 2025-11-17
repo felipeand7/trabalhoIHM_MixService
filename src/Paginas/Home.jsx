@@ -4,6 +4,9 @@ import BarraDesTaque from "../components/Barra_red/barra.js";
 import Produtos from "../components/Produtos/produtos.jsx";
 import Quem_Somos from "../components/Quem_somos/quem_somos.jsx";
 import Grid_Servicos from "../components/Grid_servicos/grid_servicos.jsx";
+import CabecalhoItem from "../components/CabecalhoItems/cabecalhoItems.jsx";
+import "@fontsource/saira-stencil-one";
+
 function App() {
   return (
     <div className="site-container">
@@ -11,7 +14,10 @@ function App() {
       <Banner_Principal />
       <BarraDesTaque />
       <Quem_Somos />
-      <Produtos />
+      <CabecalhoItem title="Camera" />
+      <Produtos type="produtos" />
+      <CabecalhoItem title="Acessorio" />
+      <Produtos type="acessorios" />
       <Grid_Servicos />
     </div>
   );

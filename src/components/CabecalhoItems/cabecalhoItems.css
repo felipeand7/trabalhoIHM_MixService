@@ -1,0 +1,20 @@
+#cabecalhoItems {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../image/gradFundo1.png");
+  color: aliceblue;
+}
+
+.cabecalho {
+  max-width: 1400px;
+  width: 1030px;
+  height: 79px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho span {
+  font-size: 30px;
+  margin-left: 10px;
+  font-family: "Saira Stencil One", system-ui, sans-serif;
+}
