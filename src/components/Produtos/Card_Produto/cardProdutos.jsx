@@ -1,17 +1,21 @@
-import "./cardprodutos.css"
-import imagem from "../../image/16.png"
+import "./cardprodutos.css";
+import imagem from "../../image/16.png";
 
-const cardProdutos = ({title, prece}) => {
+const CardProdutos = ({ title, prece }) => {
   return (
-    <div className="card-produto"> 
-      <img src={imagem} alt="" />
-    <div className="informacoes">
-      <h2>{title}</h2>
-      <span>{prece}</span>
-    </div>
-    <button>Comprar</button>
-    </div>
-  )
-}
+    <div className="card-produto">
+      <div className="card-topo">
+        <img src={imagem} />
+      </div>
 
-export default cardProdutos
+      <div className="card-corpo">
+        <h3>{title}</h3>
+        <span>{prece}</span>
+
+        <button className="btn-comprar">COMPRAR</button>
+      </div>
+    </div>
+  );
+};
+
+export default CardProdutos;

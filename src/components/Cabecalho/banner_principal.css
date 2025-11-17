@@ -1,91 +1,91 @@
-*{
-margin: 0;
-padding: 0;    
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* Contêiner Principal do Hero */
-.banner-content-wrapper{
-    max-width: 1400px;
-    margin: 0 auto;
+.banner-content-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-#cabecalho{
+#cabecalho {
+  min-height: 571px; /* Altura mínima para visibilidade em desktop */
+  position: relative; /* Contexto para a barra inferior */
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 123, 0, 1) 0%,
+    rgba(255, 160, 0, 0.98) 60%,
+    rgba(255, 105, 0, 0.95) 100%
+  );
 
-    min-height: 725px; /* Altura mínima para visibilidade em desktop */
-    position: relative; /* Contexto para a barra inferior */
-    overflow: hidden; 
-    background: linear-gradient(90deg, rgba(255,123,0,1) 0%, rgba(255,160,0,0.98) 60%, rgba(255,105,0,0.95) 100%);
-    
-    z-index: 1;
-    position: relative;
+  z-index: 1;
+  position: relative;
 }
 
 /* Wrapper do Conteúdo - Com Fundo e Layout para Setas */
 .banner-content-wrapper {
-   
-    min-height: inherit; /* Herda a altura do .banner-hero */
-    
-    /* Configurações da Imagem de Fundo */
-    background-size: cover; /* GARANTE QUE A IMAGEM PREENCHA O CONTAINER */
-    background-position: center 30%;
-    background-repeat: no-repeat; 
+  min-height: inherit; /* Herda a altura do .banner-hero */
 
-    position: relative; 
-    
-    /* LAYOUT DAS SETAS: Usando Flexbox para centralizar verticalmente */
-    display: flex; 
-    align-items: center; /* Centraliza as setas verticalmente */
-    justify-content: space-between; /* Empurra as setas para as laterais */
+  /* Configurações da Imagem de Fundo */
+  background-size: cover; /* GARANTE QUE A IMAGEM PREENCHA O CONTAINER */
+  background-position: center 30%;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  /* LAYOUT DAS SETAS: Usando Flexbox para centralizar verticalmente */
+  display: flex;
+  align-items: center; /* Centraliza as setas verticalmente */
+  justify-content: space-between; /* Empurra as setas para as laterais */
 }
 
 /* Setas do Slider */
 .banner-slider-arrow {
-    background: none;
-    border: none;
-    font-size: 2em;
-    color: #000000;
-    cursor: pointer;
-    z-index: 20; 
-    padding: 30px;
-    opacity: 0.8;
-    transition: opacity 1ms;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #000000;
+  cursor: pointer;
+  z-index: 20;
+  padding: 30px;
+  opacity: 0.8;
+  transition: opacity 1ms;
 }
 
 .banner-slider-arrow:hover {
-    opacity: 1;
+  opacity: 1;
 }
-
-
 
 /* Responsividade (Mobile) */
 @media (max-width: 768px) {
-    .banner-hero {
-        min-height: 350px; /* Altura ajustada para mobile */
-        padding-bottom: 69px; /* Espaço para a barra inferior */
-    }
-    
-    /* AJUSTE PARA A LINHA DE SEPARAÇÃO */
-    .banner-separator-line {
+  .banner-hero {
+    min-height: 350px; /* Altura ajustada para mobile */
+    padding-bottom: 69px; /* Espaço para a barra inferior */
+  }
 
-        bottom: 88px; 
-    }
+  /* AJUSTE PARA A LINHA DE SEPARAÇÃO */
+  .banner-separator-line {
+    bottom: 88px;
+  }
 
-    .banner-content-wrapper {
-        background-position: center top;
-        padding: 0 10px; 
-        /* Mantemos o display: flex para posicionar as setas */
-    }
-    
-    .banner-slider-arrow {
-        font-size: 2rem;
-    }
+  .banner-content-wrapper {
+    background-position: center top;
+    padding: 0 10px;
+    /* Mantemos o display: flex para posicionar as setas */
+  }
 
-    .banner-bottom-bar {
-        position: absolute; /* Mantém a barra no final do hero */
-        padding: 25px 1px;
-    }
-    
-    .bottom-bar-text {
-        font-size: 0.9rem;
-    }
+  .banner-slider-arrow {
+    font-size: 2rem;
+  }
+
+  .banner-bottom-bar {
+    position: absolute; /* Mantém a barra no final do hero */
+    padding: 25px 1px;
+  }
+
+  .bottom-bar-text {
+    font-size: 0.9rem;
+  }
 }

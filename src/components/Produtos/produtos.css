@@ -1,20 +1,130 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-#produtos{
+#produtos {
   margin: 0 auto;
   max-width: 1400px;
-  margin-top: 20px
+  margin-top: 20px;
+  padding: 16px 0;
 }
-#lista-produtos{
+
+.carrossel-produtos {
+  max-width: 1135px;
   margin: 0 auto;
-  max-width: 1200px;
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  justify-content: center;
-  padding:  0px 50px 0px 50px;
+  align-items: center;
+}
+
+#lista-produtos {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  gap: 14px;
+  padding: 10px 40px;
+  width: calc(250px * 4 + 16px * 3);
+  max-width: 100%;
+  scrollbar-width: none;
+}
+
+#lista-produtos .card-produto {
+  flex: 0 0 245px;
+  scroll-snap-align: start;
+}
+
+#lista-produtos::-webkit-scrollbar {
+  display: none;
+}
+
+.seta img {
+  width: 55px;
+  height: 54px;
+}
+.seta-esquerda {
+  transform: rotate(180deg);
+  border-radius: 100px;
+  background: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+}
+
+.seta-direita {
+  border-radius: 100px;
+  background: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+}
+.seta:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .carrossel-produtos {
+    max-width: 100%;
+  }
+
+  #lista-produtos {
+    padding: 10px 40px;
+  }
+
+  #lista-produtos .card-produto {
+    flex: 0 0 calc((100% - 2 * 14px) / 3);
+    max-width: calc((100% - 2 * 14px) / 3);
+  }
+}
+
+/* 2 cards em tablets/landscape mobile */
+@media (max-width: 768px) {
+  #produtos {
+    padding: 8px 0;
+  }
+
+  #lista-produtos {
+    padding: 10px 36px;
+  }
+
+  #lista-produtos .card-produto {
+    flex: 0 0 calc((100% - 14px) / 2);
+    max-width: calc((100% - 14px) / 2);
+  }
+
+  .seta {
+    width: 34px;
+    height: 34px;
+  }
+
+  .seta img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* 1 card em celular pequeno */
+@media (max-width: 480px) {
+  #lista-produtos {
+    padding: 10px 32px;
+    gap: 12px;
+  }
+
+  #lista-produtos .card-produto {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+
+  .seta {
+    width: 30px;
+    height: 30px;
+  }
+
+  .seta img {
+    width: 14px;
+    height: 14px;
+  }
 }
