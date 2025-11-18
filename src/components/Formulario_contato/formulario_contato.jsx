@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './formulario_contato.css';
+import '../image/fundo-cidade.png';
 
 /* global google */
 
