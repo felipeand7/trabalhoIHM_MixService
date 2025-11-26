@@ -5,7 +5,7 @@ function Banner_Principal() {
   return (
     
     <section id="cabecalho">
-      <div className="banner-content-wrapper" style={{ backgroundImage: `url(${banner})` }}>
+      <img src={banner} className="banner-img" alt="Banner" />
         <div className="hero-limitador"> 
           <button className="banner-slider-arrow left-arrow" aria-label="Slide anterior">
             &lt;
@@ -14,7 +14,7 @@ function Banner_Principal() {
             &gt;
           </button>
        </div>
-      </div>
+      
     </section>
   );
 }
