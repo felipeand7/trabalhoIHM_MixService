@@ -1,5 +1,5 @@
 import React from "react";
-import "../InconsDestaques/InconsDestaques.css"; // Verifique se o caminho está correto
+import "../InconsDestaques/InconsDestaques.css";
 import CameraIcon from "../image/icons/camera.png";
 import IgrenagemIcon from "../image/icons/igrenagem.png";
 import PlayIcon from "../image/icons/play.png";
@@ -8,37 +8,32 @@ import AntenaIcon from "../image/icons/antena.png";
 
 const InconsDestaques = () => {
   return (
-    <section>
+    <sectino>
       <div id="IconsDestaques">
         <div className="AreaDestaques">
           <div className="iconsCards">
-            {/* Adicionei a classe icon-img em todos */}
-            <img className="icon-img" src={CameraIcon} alt="Câmera" />
-            <span>Segurança</span>
+            <img id="CameraIcon" src={CameraIcon} alt="" />
+            <span>Camera de Segurança</span>
           </div>
-
           <div className="iconsCards">
-            <img className="icon-img" src={TvIcon} alt="TV" />
-            <span>Monitoramento</span>
+            <img id="TvIcon" src={TvIcon} alt="" />
+            <span>Camera de Segurança</span>
           </div>
-
           <div className="iconsCards">
-            <img className="icon-img" src={PlayIcon} alt="Play" />
-            <span>Reprodução</span>
+            <img id="PlayIcon" src={PlayIcon} alt="" />
+            <span>Camera de Segurança</span>
           </div>
-
           <div className="iconsCards">
-            <img className="icon-img" src={AntenaIcon} alt="Antena" />
-            <span>Conectividade</span>
+            <img id="AntenaIcon" src={AntenaIcon} alt="" />
+            <span>Camera de Segurança</span>
           </div>
-
           <div className="iconsCards">
-            <img className="icon-img" src={IgrenagemIcon} alt="Configuração" />
-            <span>Configuração</span>
+            <img id="IgrenagemIcon" src={IgrenagemIcon} alt="" />
+            <span>Camera de Segurança</span>
           </div>
         </div>
       </div>
-    </section>
+    </sectino>
   );
 };
 
