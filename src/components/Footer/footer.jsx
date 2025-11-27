@@ -2,7 +2,7 @@ import React from "react";
 import "./footer.css";
 import Logo from "../image/logo.png";
 import FundoGrade from "../image/gradeFundo.png";
-import InconeInsta from "../image/icons/instagram.png";
+import InconeInsta from "../image/icons/Instagram.png";
 import IconeLinkedin from "../image/icons/Linkedln.png";
 import IconeWeb from "../image/icons/Site.png";
 import IconeEmail from "../image/icons/Email.png";
